@@ -21,6 +21,9 @@ class CategoryViewModel: ViewModel {
     var mutablelivedata = MutableLiveData<ArrayList<CategoryViewModel>>()
     var arrayList = ArrayList<CategoryViewModel>()
 
+    fun getImageUrl(): String{
+        return imagePath
+    }
     fun getArrayList(): MutableLiveData<ArrayList<CategoryViewModel>>{
 
         val catagoryOne = Category("1","this is title one","the description of the title","image.png")
